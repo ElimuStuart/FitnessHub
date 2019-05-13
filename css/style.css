@@ -1,0 +1,515 @@
+/* global styles */
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-white: #fff !important;
+    --main-blue: #007bff !important;
+}
+
+/* navigation */
+#nav-bar {
+    position: sticky;
+    z-index: 10;
+    top: 0;
+}
+
+
+.navbar-brand img {
+    height: 40px;
+    padding-left: 30px;
+}
+
+.navbar-nav li {
+    padding: 0 10px;
+}
+
+.navbar-nav li a:hover {
+    color: var(--main-blue) !important;
+}
+
+.navbar {
+    background-color: var(--main-white);
+}
+
+.navbar-toggler {
+    border: none !important;
+}
+
+.nav-link {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000 !important;
+    text-transform: uppercase;
+}
+
+/* navigation */
+#slider {
+    width: 100%;
+
+}
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+}
+
+.carousel-caption h3 {
+    text-transform: uppercase;
+    font-size: 44px;
+    font-weight: bold;
+}
+
+/* about  */
+#about {
+    padding: 70px 0;
+    color: #555;
+}
+
+
+
+#about .btn-primary {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border: 1px solid var(--main-blue) !important;
+    background: #fff;
+    color: #555;
+}
+
+#about .btn-primary:hover {
+    border: none !important;
+    background: var(--main-blue) !important;
+    color: var(--main-white) !important;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.about-content {
+    padding-top: 20px;
+}
+
+.skills-bar p {
+    margin-bottom: 6px;
+}
+
+.progress {
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    border-radius: 15px;
+}
+
+/* trainings  */
+#trainings {
+    padding: 70px 0;
+    color: #efefef;
+    background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url(../images/trainings-bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#trainings h1 {
+    text-align: center;
+    color: #efefef !important;
+    padding-bottom: 10px;
+}
+
+#trainings h1::after {
+    content: "";
+    height: 3px;
+    width: 170px;
+    background-color: var(--main-blue);
+    display: block;
+    margin: 20px auto 5px;
+}
+
+.trainings {
+    margin-top: 40px;
+}
+
+.icon {
+    font-size: 40px;
+    width: 80px;
+    height: 80px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid var(--main-white);
+    border-radius: 50%;
+}
+
+.trainings p {
+    color: #ccc;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.trainings .col-md-3:hover {
+    background-color: var(--main-blue);
+    cursor: pointer;
+    transition: .7s;
+}
+
+/* our team */
+#team {
+    padding: 70px 0;
+    color: #555 !important;
+}
+h1 {
+    text-align: center;
+    color: #555 !important;
+    padding-bottom: 10px;
+}
+
+h1::after {
+    content: "";
+    height: 3px;
+    width: 170px;
+    background-color: var(--main-blue);
+    display: block;
+    margin: 20px auto 5px;
+}
+
+.profile-pic {
+    margin-top: 20px;
+}
+
+.profile-pic .img-box {
+    opacity: 1;
+    display: block;
+    position: relative;
+}
+
+.profile-pic .img-box img {
+    filter: grayscale(1);
+}
+
+.profile-pic .img-box img:hover {
+    filter: grayscale(0);
+    cursor: pointer;
+}
+
+.profile-pic h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--main-blue);
+    margin-top: 15px;
+}
+
+.profile-pic h3 {
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+#team fa {
+    width: 25px;
+    height: 25px;
+    padding: 4px;
+    border-radius: 50%;
+    color: var(--main-blue);
+    background: var(--main-white);
+}
+
+.img-box ul {
+    padding: 15px 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    opacity: 0;
+}
+
+.img-box ul li {
+    display: inline-block;
+    padding: 5px;
+}
+
+.img-box:hover ul {
+    opacity: 1;
+}
+
+.img-box ul, .img-box ul li {
+    transition: .5s;
+}
+
+/* promo */
+#promo {
+    padding: 100px;
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(../images/barbells-dumbbells-equipment-669584.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #efefef;
+    text-align: center;
+    font-size: 38px;
+
+}
+
+#promo .btn-primary {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #555 !important;
+    background: transparent !important;
+    color: #fff;
+}
+
+#promo .btn-primary:hover {
+    border: none !important;
+    background: var(--main-blue) !important;
+    color: var(--main-white) !important;
+    transition: .5s;
+    cursor: pointer;
+}
+
+/* membership plans */
+#plan {
+    padding: 70px 0;
+    background: #efefef;
+}
+
+.single-price {
+    margin: 10px auto;
+    width: 100%;
+    float: left;
+    display: inline;
+    background: #fff;
+    transition: .5s;
+}
+
+.single-price:hover {
+    box-shadow: 0 2px 20px #333;
+}
+
+.price-head {
+    width: 100%;
+    float: left;
+    display: inline;
+    padding: 10px 5px;
+    text-align: center;
+    background: #2196f3;
+}
+
+.price-head h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.price-head p {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 30px;
+    color: #ccc;
+
+}
+
+#plan span {
+    font-size: 15px;
+}
+
+.price-content {
+    width: 100%;
+    float: left;
+    display: inline;
+    padding: 0 15px;
+}
+
+.price-content ul li {
+    padding: 15px 10px;
+    border-bottom: 1px solid #efefef;
+    list-style: none;
+}
+
+.price-content ul li:last-child {
+    border: none !important;
+}
+
+.fa-check-circle {
+    color: green;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.fa-times-circle {
+    color: red;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.price-button {
+    width: 100%;
+    float: left;
+    display: inline;
+    padding: 15px 15px 30px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none !important;
+    color: #fff !important;
+}
+
+.buy-btn {
+    background: #fff;
+    border: 1px solid #2196f3;
+    color: #2196f3 !important;
+    transition: .5s;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 15px 50px;
+}
+
+.buy-btn:hover {
+    background: #2196f3;
+    color: #fff !important;
+}
+
+/* testimonials */
+#testimonials {
+    padding: 70px 0;
+}
+
+#testimonials .row{
+    margin-top: 30px;
+}
+
+#testimonials .col-md-4 {
+    margin: 40px auto;
+}
+
+.profile {
+    padding: 70px 10px 10px;
+    background: #efefef;
+}
+
+.profile img {
+    top: -60px;
+    left: calc(50% - 60px);
+    position: absolute;
+    border: 10px solid #fff;
+}
+
+.user {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.profile h3 {
+    font-size: 20px;
+    margin-top: 15px;
+    color: var(--main-blue);
+}
+
+#testimonials span {
+    color: #333;
+    font-size: 14px;
+}
+
+blockquote {
+    font-size: 15px;
+    line-height: 30px;
+}
+
+blockquote::before {
+    content: '\201C';
+    font-size: 50px;
+    color: var(--main-blue);
+    position: relative;
+    line-height: 20px;
+    bottom: -15px;
+    right: 5px;
+}
+
+blockquote::after {
+    content: '\201D';
+    font-size: 50px;
+    color: var(--main-blue);
+    position: relative;
+    line-height: 20px;
+    bottom: -15px;
+    left: 5px;
+}
+
+.profile:hover {
+    box-shadow: 0 0 15px 15px rgba(0,0,0,.2);
+    cursor: pointer;
+    transition: .5s;
+}
+
+/* contact */
+#contact {
+    color: #777;
+    padding: 70px 0;
+    background: #efefef;
+}
+
+.contact-form {
+    padding: 15px;
+}
+
+.form-control {
+    border-radius: 0 !important;
+    border: none !important;
+}
+
+::placeholder {
+    color: #999 !important;
+}
+
+.follow {
+    background: #fff;
+    padding: 10px;
+    margin: 15px;
+}
+
+#contact .fa {
+    color: #007bff !important;
+    margin: 10px;
+    font-weight: bold;
+}
+
+#contact .btn-primary {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border-radius: 0;
+    border: 1px solid var(--main-blue) !important;
+    background: #fff;
+    color: #555;
+}
+
+#contact .btn-primary:hover {
+    border: none !important;
+    background: var(--main-blue) !important;
+    color: var(--main-white) !important;
+    transition: .5s;
+    cursor: pointer;
+}
+
+/* footer */
+#footer {
+    padding: 20px 0;
+    background: #000;
+    color: var(--main-white);
+}
+
+
+
+
+
